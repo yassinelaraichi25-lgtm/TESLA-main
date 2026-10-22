@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Une exploration indépendante du design Tesla.">
+  <title>Tesla — Electric Motion</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav aria-label="Navigation principale">
+    <a class="logo" href="#" aria-label="Accueil">TESLA</a>
+
+    <div class="links">
+      <a href="#modeles">Véhicules</a>
+      <a href="#film">L'expérience</a>
+      <a href="#vision">Notre vision</a>
+    </div>
+
+    <a class="nav-end" href="#explorer">Explorer Tesla ↗</a>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Le mouvement. Réinventé.</span>
+        <h1>web design.<br>À l'état pur.</h1>
+        <p>Un design essentiel. Une nouvelle façon d'avancer.</p>
+      </div>
+
+      <div class="hero-bottom">
+        <a class="btn light" href="#modeles">
+          Découvrir les modèles <span>↗</span>
+        </a>
+
+        <div class="subtle">
+          UNE AUTRE PERSPECTIVE
+          <span class="scroll">↓</span>
+        </div>
+
+        <span class="subtle">01 / ELECTRIC MOTION</span>
+      </div>
+    </header>
+
+    <section id="modeles">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">01 — La collection</span>
+          <h2>Deux silhouettes.<br>Un même esprit.</h2>
+        </div>
+
+        <p>
+          Des lignes épurées, un espace repensé.<br>
+          Trouvez votre façon de vivre l'électrique.
+        </p>
+      </div>
+
+      <div class="models">
+        <article class="model">
+          <h3>Model 3</h3>
+          <p>La berline, dans sa forme essentielle.</p>
+
+          <img
+            src="assets/hero.avif"
+            alt="Tesla Model 3"
+            loading="lazy"
+          >
+
+          <a href="https://www.tesla.com/fr_fr/model3"
+             target="_blank" rel="noopener">
+            Découvrir sur Tesla.com <span>↗</span>
+          </a>
+        </article>
+
+        <article class="model second">
+          <h3>Model Y</h3>
+          <p>De la place pour vos nouvelles perspectives.</p>
+
+          <img
+            src="assets/model-y.jpg"
+            alt="Tesla Model Y"
+            loading="lazy"
+          >
+
+          <a href="https://www.tesla.com/fr_fr/modely"
+             target="_blank" rel="noopener">
+            Découvrir sur Tesla.com <span>↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="film" id="film">
+      <div class="film-top">
+        <div>
+          <span class="eyebrow">02 — En mouvement</span>
+          <h2>À vivre. À ressentir.</h2>
+        </div>
+
+        <p>
+          Entrez dans l'univers Model 3.<br>
+          Lancez la vidéo et activez le son.
+        </p>
+      </div>
+
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        poster="assets/hero.avif"
+        aria-label="Présentation vidéo Tesla Model 3"
+      >
+        <source src="assets/film.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge cette vidéo.
+      </video>
+
+      <p id="video-error" class="video-error" hidden>
+        La vidéo est indisponible.
+        <a href="https://www.tesla.com/fr_fr/model3">
+          Découvrir le Model 3 sur Tesla.com ↗
+        </a>
+      </p>
+    </section>
+
+    <section class="vision" id="vision">
+      <div>
+        <span class="eyebrow">03 — L'essentiel, autrement</span>
+        <h2>Moins de superflu.<br>Plus de possibilités.</h2>
+        <p>
+          Une vision de l'automobile où chaque ligne et chaque détail
+          participent à une expérience plus simple.
+        </p>
+      </div>
+
+      <div>
+        <article class="feature">
+          <span>01</span>
+          <div>
+            <h3>Un design qui respire</h3>
+            <p>
+              Des surfaces fluides et une silhouette qui place
+              la simplicité au premier plan.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <span>02</span>
+          <div>
+            <h3>Un intérieur repensé</h3>
+            <p>
+              Un habitacle minimaliste qui fait de l'espace
+              une partie de l'expérience.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <span>03</span>
+          <div>
+            <h3>Une nouvelle énergie</h3>
+            <p>
+              Découvrez les véhicules et l'univers de la recharge
+              sur le site officiel Tesla.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing" id="explorer">
+      <span class="eyebrow">La suite vous appartient</span>
+      <h2>Changez de perspective.</h2>
+      <p>
+        Explorez la gamme ou préparez votre prochain essai
+        sur le site officiel.
+      </p>
+
+      <img src="assets/ma-photo.jpg"
+           alt="Voiture électrique rouge au coucher du soleil"
+           style="width: 100%; height: auto;">
+
+      <button class="btn" id="explore">
+        Explorer les possibilités <span>↗</span>
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">TESLA</a>
+    <span>
+      Concept indépendant par Yassine Laraichi · Non affilié à Tesla, Inc.
+    </span>
+    <a href="https://www.tesla.com/fr_fr"
+       target="_blank" rel="noopener">
+      Site officiel ↗
+    </a>
+  </footer>
+
+  <dialog id="choices" aria-labelledby="dialog-title">
+    <button id="close" aria-label="Fermer">×</button>
+    <span class="eyebrow">Votre prochaine étape</span>
+    <h2 id="dialog-title">Explorez l'électrique.</h2>
+
+    <p>
+      Continuez sur le site officiel Tesla pour les informations
+      et disponibilités à jour.
+    </p>
+
+    <a href="https://www.tesla.com/fr_fr/drive"
+       target="_blank" rel="noopener">
+      Découvrir les essais Tesla ↗
+    </a>
+
+    <a href="https://www.tesla.com/fr_fr/model3"
+       target="_blank" rel="noopener">
+      Explorer Model 3 ↗
+    </a>
+
+    <a href="https://www.tesla.com/fr_fr/modely"
+       target="_blank" rel="noopener">
+      Explorer Model Y ↗
+    </a>
+  </dialog>
+</body>
+</html>
